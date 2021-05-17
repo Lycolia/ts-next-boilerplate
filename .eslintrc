@@ -6,8 +6,7 @@
     "react-app",
     "react-app/jest",
     "plugin:react/recommended",
-    "prettier",
-    "prettier/@typescript-eslint"
+    "prettier"
   ],
   "plugins": ["react", "@typescript-eslint"],
   "parserOptions": {
