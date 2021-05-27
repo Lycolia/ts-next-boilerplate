@@ -12,7 +12,7 @@
     "start": "next",
     "build": "next build",
     "serve": "next start",
-    "lint": "tsc --noEmit && eslint --quiet --fix-dry-run",
+    "lint": "tsc --noEmit && eslint --fix-dry-run",
     "test": "jest"
   },
   "dependencies": {
