@@ -16,22 +16,25 @@ You will also see any lint errors in the console.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Deployed the app for production assets to the `out/` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
 ### `npm run serve`
 
-Runs the Next.js production server
-
-### `npm test`
-
-**Note: This script has not been confirmed to work**
-
-Launches the test runner
+Runs the Next.js production server for SSG
 
 ### `npm run lint`
 
 Runs linter of ESLint and TSC, that will prevent bugs!
+
+### `npm test`
+
+Launches the test runner by watch mode
+
+### `npm headless-test`
+
+Launches the test and lint for headless mode.
+
+### `npm coverage`
+
+Getting test coverage.
