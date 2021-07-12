@@ -2,14 +2,27 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Chrome",
+      "type": "node",
+      "request": "attach",
+      "name": "Next: Node",
+      "skipFiles": ["<node_internals>/**", ".next/**"],
+      "port": 9229
+    },
+    {
       "type": "chrome",
       "request": "launch",
+      "name": "Next: Chrome",
       "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}/src",
+      "webRoot": "${workspaceFolder}",
       "sourceMapPathOverrides": {
-        "webpack:///src/*": "${webRoot}/*"
+        "webpack://_N_E/*": "${webRoot}/*"
       }
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Next: Full",
+      "configurations": ["Next: Node", "Next: Chrome"]
     }
   ]
 }
