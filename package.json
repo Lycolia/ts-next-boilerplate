@@ -9,6 +9,7 @@
     "url": "https://github.com/Lycolia/ts-next-boilerplate"
   },
   "scripts": {
+    "dev": "NODE_OPTIONS='--inspect' next",
     "start": "next",
     "build": "next build --profile && next export",
     "serve": "serve -p 3000 ./out",
