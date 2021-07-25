@@ -16,7 +16,8 @@
       "webRoot": "${workspaceFolder}",
       "sourceMapPathOverrides": {
         "webpack://_N_E/*": "${webRoot}/*"
-      }
+      },
+      "runtimeArgs": ["--profile-directory=debug-profile"]
     }
   ],
   "compounds": [
