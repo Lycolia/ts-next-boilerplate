@@ -38,3 +38,18 @@ Launches the test and lint for headless mode.
 ### `npm coverage`
 
 Getting test coverage.
+
+## About `next.config.js`
+
+## `basePath`
+
+Settings for hosting Next.js on sub directory
+
+- [Reference](https://nextjs.org/docs/api-reference/next.config.js/basepath)
+
+## `assetPrefix`
+
+Settings for customize `_next` directory path
+
+- This is useful, if have multiple Next.js instances in the same directory.
+- [Reference](https://nextjs.org/docs/api-reference/next.config.js/cdn-support-with-asset-prefix)
