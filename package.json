@@ -13,7 +13,6 @@
     "start": "next",
     "build": "next build --profile && next export",
     "serve": "serve -p 3000 ./out",
-    "lint": "tsc --noEmit && eslint --fix-dry-run",
     "test": "jest --watch",
     "type-check": "tsc --noEmit && eslint .",
     "headless-test": "npm run type-check && jest",
