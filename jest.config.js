@@ -5,6 +5,7 @@ module.exports = {
     },
   },
   preset: 'ts-jest',
+  clearMocks: true,
   setupFilesAfterEnv: ['<rootDir>/jest-setup.ts'],
   roots: ['<rootDir>'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json', 'jsx'],
