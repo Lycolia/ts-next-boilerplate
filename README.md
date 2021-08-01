@@ -8,24 +8,24 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the app in the development mode\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
-The page will reload if you make edits.\
+The page will reload if you make edits\
 You will also see any lint errors in the console.
 
 ### `npm run build`
 
-Deployed the app for production assets to the `out/` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Deployed the app for production assets to the `out/` folder\
+It correctly bundles React in production mode and optimizes the build for the best performance
 
 ### `npm run serve`
 
 Runs the Next.js production server for SSG
 
-### `npm run lint`
+### `npm run type-check`
 
-Runs linter of ESLint and TSC, that will prevent bugs!
+Runs linter(detect only, does not fixer) of ESLint and TSC, that will prevent bugs!
 
 ### `npm test`
 
@@ -33,11 +33,11 @@ Launches the test runner by watch mode
 
 ### `npm headless-test`
 
-Launches the test and lint for headless mode.
+Launches the test and lint for headless mode
 
 ### `npm coverage`
 
-Getting test coverage.
+Getting test coverage
 
 ## About `next.config.js`
 
@@ -51,5 +51,5 @@ Settings for hosting Next.js on sub directory
 
 Settings for customize `_next` directory path
 
-- This is useful, if have multiple Next.js instances in the same directory.
+- This is useful, if have multiple Next.js instances in the same directory
 - [Reference](https://nextjs.org/docs/api-reference/next.config.js/cdn-support-with-asset-prefix)
