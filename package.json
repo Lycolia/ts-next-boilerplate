@@ -1,6 +1,6 @@
 {
   "name": "@lycolia/next-boilerplate",
-  "version": "0.6.2",
+  "version": "0.7.0",
   "description": "Next.js Static Site Generation boilerplate for TypeScript",
   "author": "Lycolia",
   "license": "MIT",
@@ -15,6 +15,7 @@
     "serve": "serve -p 3000 ./out",
     "lint": "tsc --noEmit && eslint --fix-dry-run",
     "test": "jest --watch",
+    "type-check": "tsc --noEmit && eslint .",
     "headless-test": "npm run type-check && jest",
     "coverage": "jest --coverage"
   },
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
+    "@testing-library/react-hooks": "^7.0.1",
     "@types/jest": "^26.0.23",
     "@types/node": "^15.0.2",
     "@types/react": "^17.0.5",
