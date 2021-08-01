@@ -5,3 +5,5 @@ out/*
 coverage/*
 # data definition files
 **/*.d.ts
+# config files
+**/*.config.js
