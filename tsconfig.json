@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "target": "es2020",
+    "module": "es2020",
     "lib": ["dom", "es2017"],
     "allowJs": false,
+    "checkJs": false,
     "jsx": "preserve",
     "sourceMap": true,
     "noEmit": true,
