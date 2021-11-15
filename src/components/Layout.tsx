@@ -5,7 +5,7 @@ type LayoutProps = {
   children: JSX.Element;
 };
 
-const Layout = (props: LayoutProps) => {
+export const Layout = (props: LayoutProps) => {
   return (
     <>
       <Head>
@@ -17,5 +17,3 @@ const Layout = (props: LayoutProps) => {
     </>
   );
 };
-
-export default Layout;
