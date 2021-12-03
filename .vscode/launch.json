@@ -5,7 +5,11 @@
       "type": "node",
       "request": "attach",
       "name": "Next: Node",
-      "skipFiles": ["<node_internals>/**", ".next/**"],
+      "skipFiles": [
+        "${workspaceFolder}/node_modules/**/*.js",
+        "<node_internals>/**/*.js",
+        "${workspaceFolder}/.next/**"
+      ],
       "port": 9229
     },
     {
@@ -13,6 +17,10 @@
       "request": "launch",
       "name": "Next: Chrome",
       "url": "http://localhost:3000",
+      "skipFiles": [
+        "${workspaceFolder}/node_modules/**/*.js",
+        "<node_internals>/**/*.js"
+      ],
       "webRoot": "${workspaceFolder}",
       "sourceMapPathOverrides": {
         "webpack://_N_E/*": "${webRoot}/*"
