@@ -31,13 +31,21 @@ Runs linter(detect only, does not fixer) of ESLint and TSC, that will prevent bu
 
 Launches the test runner by watch mode
 
-### `npm headless-test`
+### `npm run headless-test`
 
 Launches the test and lint for headless mode
 
-### `npm coverage`
+### `npm run coverage`
 
 Getting test coverage
+
+### `npm run storybook`
+
+Starts [Storybook](https://storybook.js.org/) in development mode
+
+### `npm run build-storybook`
+
+[Publish Storybook](https://storybook.js.org/docs/react/sharing/publish-storybook)
 
 ## About `next.config.js`
 
