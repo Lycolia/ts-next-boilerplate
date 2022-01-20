@@ -1,0 +1,20 @@
+@mixin baseStyle($bgColor) {
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  background-color: $bgColor;
+  border-radius: 10px;
+}
+
+.red {
+  @include baseStyle(Crimson);
+}
+
+.cyan {
+  @include baseStyle(DarkCyan);
+}
+
+.blue {
+  @include baseStyle(DarkSlateBlue);
+}
