@@ -9,7 +9,7 @@
     "url": "https://github.com/Lycolia/ts-next-boilerplate"
   },
   "scripts": {
-    "dev": "NODE_OPTIONS='--inspect' next",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next",
     "start": "next",
     "build": "next build --profile && next export",
     "serve": "serve -p 3000 ./out",
@@ -17,7 +17,7 @@
     "type-check": "tsc --noEmit && eslint .",
     "headless-test": "npm run type-check && jest",
     "coverage": "jest --coverage",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "cross-env SKIP_PREFLIGHT_CHECK=true start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
