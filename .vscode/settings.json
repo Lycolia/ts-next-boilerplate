@@ -31,5 +31,12 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.referencesCodeLens.enabled": true,
   "typescript.validate.enable": true,
-  "typescript.preferences.importModuleSpecifier": "relative"
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "[typescriptreact]": {
+    "editor.tabSize": 2
+  },
+  "[scss]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
