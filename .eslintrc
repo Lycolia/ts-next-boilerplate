@@ -6,6 +6,7 @@
     "react-app",
     "react-app/jest",
     "plugin:react/recommended",
+    "plugin:@next/next/recommended",
     "plugin:storybook/recommended",
     "prettier"
   ],
@@ -53,6 +54,8 @@
         "html": true
       }
     ],
+    // Allow using img elements
+    "@next/next/no-img-element": "off",
     // Allow non-explicit return types on functions and class methods
     "@typescript-eslint/explicit-function-return-type": "off",
     // Allow non-explicit return types on exported functions
