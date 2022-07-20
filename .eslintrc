@@ -6,6 +6,7 @@
     "react-app",
     "react-app/jest",
     "plugin:react/recommended",
+    "plugin:@next/next/recommended",
     "plugin:storybook/recommended",
     "prettier",
     "@lycolia/eslint-config"
@@ -59,6 +60,8 @@
         "html": true
       }
     ],
+    // Allow using img elements
+    "@next/next/no-img-element": "off",
     // Disabled react-testing-library
     "testing-library/no-container": "off",
     // Disabled react-testing-library
