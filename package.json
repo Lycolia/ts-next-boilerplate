@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.16.10",
+    "@lycolia/eslint-config": "^0.1.1",
     "@storybook/addon-actions": "^6.5.0-alpha.21",
     "@storybook/addon-essentials": "^6.5.0-alpha.21",
     "@storybook/addon-links": "^6.5.0-alpha.21",
