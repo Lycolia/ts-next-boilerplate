@@ -1,5 +1,5 @@
 import { screen, render } from '@testing-library/react';
-import { Example } from './Example';
+import { Example } from 'src/components/Example';
 
 describe('Example', () => {
   it('render', () => {

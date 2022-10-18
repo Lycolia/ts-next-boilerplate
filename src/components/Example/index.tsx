@@ -1,4 +1,4 @@
-import styles from './Example.module.scss';
+import styles from './index.module.scss';
 
 type ExampleProps = {
   bgColor: 'red' | 'cyan' | 'blue';

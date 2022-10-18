@@ -1,6 +1,6 @@
 import type { ComponentStoryObj } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { Example } from './Example';
+import { Example } from '.';
 
 type Story = ComponentStoryObj<typeof Example>;
 
