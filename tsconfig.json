@@ -2,7 +2,10 @@
   "compilerOptions": {
     "target": "es2020",
     "module": "es2020",
-    "lib": ["dom", "es2017"],
+    "lib": [
+      "dom",
+      "es2017"
+    ],
     "allowJs": false,
     "checkJs": false,
     "jsx": "preserve",
@@ -22,6 +25,12 @@
     "resolveJsonModule": true,
     "incremental": true
   },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "jest-setup.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
