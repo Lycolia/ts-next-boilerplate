@@ -8,8 +8,8 @@
     "plugin:react/recommended",
     "plugin:@next/next/recommended",
     "plugin:storybook/recommended",
-    "prettier",
-    "@lycolia/eslint-config"
+    "@lycolia/eslint-config",
+    "prettier"
   ],
   "plugins": [
     "react",
