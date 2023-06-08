@@ -27,7 +27,10 @@
     }
   },
   "rules": {
-    // Detect missing key prop
+    // key propsがない時に警告
+    // 以下の条件も警告する
+    // - フラグメントショートハンドにkey propsが必要な場合
+    // - スプレッド前にkey propsがある場合
     "react/jsx-key": [
       "warn",
       {
@@ -35,14 +38,19 @@
         "checkKeyMustBeforeSpread": true
       }
     ],
-    // Enforce shorthand or standard form for React fragments
+    // フラグメントのショートハンドを強制する（key propsがあるときは除外される）
     "react/jsx-fragments": [
       "warn",
       "syntax"
     ],
-    // Prevent missing React when using JSX
+    // import React from 'react'を書かなくても良くする
     "react/react-in-jsx-scope": "off",
-    // Validate whitespace in and around the JSX opening and closing brackets
+    // 閉じタグのスペースルールを以下の形式にする
+    // <hoge></hoge>
+    // <hoge />
+    // <hoge
+    //   piyo='fuga'
+    // />
     "react/jsx-tag-spacing": [
       "warn",
       {
@@ -52,7 +60,8 @@
         "beforeClosing": "never"
       }
     ],
-    // Prevent extra closing tags for components without children
+    // 子要素を持たない終了タグを禁止
+    // <div></div> -> <div />
     "react/self-closing-comp": [
       "warn",
       {
@@ -60,11 +69,12 @@
         "html": true
       }
     ],
-    // Allow using img elements
+    // img要素の利用を許可（CSS対策）
+    // Next.js 13では不要かも
     "@next/next/no-img-element": "off",
-    // Disabled react-testing-library
+    // ワークアラウンド
     "testing-library/no-container": "off",
-    // Disabled react-testing-library
+    // ワークアラウンド
     "testing-library/no-node-access": "off"
   }
 }
