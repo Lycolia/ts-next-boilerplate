@@ -1,6 +1,6 @@
 {
   "name": "@lycolia/next-boilerplate",
-  "version": "0.18.3",
+  "version": "0.18.4",
   "description": "Next.js Static Site Generation boilerplate for TypeScript",
   "author": "Lycolia",
   "license": "MIT",
