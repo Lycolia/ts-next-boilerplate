@@ -69,9 +69,6 @@
         "html": true
       }
     ],
-    // img要素の利用を許可（CSS対策）
-    // Next.js 13では不要かも
-    "@next/next/no-img-element": "off",
     // ワークアラウンド
     "testing-library/no-container": "off",
     // ワークアラウンド
