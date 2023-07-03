@@ -3,6 +3,8 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:jest/style",
+    "plugin:jest/recommended",
     "react-app",
     "react-app/jest",
     "plugin:react/recommended",
@@ -11,10 +13,7 @@
     "@lycolia/eslint-config",
     "prettier"
   ],
-  "plugins": [
-    "react",
-    "@typescript-eslint"
-  ],
+  "plugins": ["react", "@typescript-eslint"],
   "parserOptions": {
     "project": "./tsconfig.json",
     "ecmaFeatures": {
@@ -39,10 +38,7 @@
       }
     ],
     // フラグメントのショートハンドを強制する（key propsがあるときは除外される）
-    "react/jsx-fragments": [
-      "warn",
-      "syntax"
-    ],
+    "react/jsx-fragments": ["warn", "syntax"],
     // import React from 'react'を書かなくても良くする
     "react/react-in-jsx-scope": "off",
     // 閉じタグのスペースルールを以下の形式にする
