@@ -6,6 +6,7 @@ const createJestConfig = nextJest({
 });
 
 const myConfig = {
+  resetMocks: true,
   clearMocks: true,
   setupFilesAfterEnv: ['<rootDir>/jest-setup.js'],
   roots: ['<rootDir>'],
