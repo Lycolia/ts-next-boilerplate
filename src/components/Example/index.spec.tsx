@@ -1,12 +1,12 @@
 import { screen, render } from '@testing-library/react';
-import { Example } from 'src/components/Example';
+import { Example } from '.';
 
 describe('Example', () => {
   it('render', () => {
     const testProps: React.ComponentProps<typeof Example> = {
       text: 'aaa',
       bgColor: 'red',
-      onClick: jest.fn,
+      onClick: jest.fn
     };
     render(<Example {...testProps} />);
     const el = screen.getByText(testProps.text);
