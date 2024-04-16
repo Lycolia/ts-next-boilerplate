@@ -40,8 +40,6 @@
       "warn",
       "syntax"
     ],
-    // import React from 'react'を書かなくても良くする
-    "react/react-in-jsx-scope": "off",
     // 閉じタグのスペースルールを以下の形式にする
     // <hoge></hoge>
     // <hoge />
