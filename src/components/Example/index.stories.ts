@@ -1,8 +1,8 @@
-import type { ComponentStoryObj } from '@storybook/react';
+import type { StoryObj } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { Example } from '.';
 
-type Story = ComponentStoryObj<typeof Example>;
+type Story = StoryObj<typeof Example>;
 
 export default { component: Example };
 
@@ -11,6 +11,6 @@ export const SetDefault: Story = {
   args: {
     text: 'Test',
     bgColor: 'cyan',
-    onClick: action('clicked!'),
-  },
+    onClick: action('clicked!')
+  }
 };
