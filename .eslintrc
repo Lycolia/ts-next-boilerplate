@@ -1,74 +1,74 @@
 {
-    "parser": "@typescript-eslint/parser",
-    "extends": [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/recommended",
-      "plugin:jest/style",
-      "plugin:jest/recommended",
-      "plugin:react/recommended",
-      "plugin:@next/next/recommended",
-      "plugin:storybook/recommended",
-      "@lycolia/eslint-config",
-      "prettier"
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jest/style",
+    "plugin:jest/recommended",
+    "plugin:react/recommended",
+    "plugin:@next/next/recommended",
+    "plugin:storybook/recommended",
+    "@lycolia/eslint-config",
+    "prettier"
+  ],
+  "plugins": ["react", "@typescript-eslint"],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    // key propsがない時に警告
+    // 以下の条件も警告する
+    // - フラグメントショートハンドにkey propsが必要な場合
+    // - スプレッド前にkey propsがある場合
+    "react/jsx-key": [
+      "warn",
+      {
+        "checkFragmentShorthand": true,
+        "checkKeyMustBeforeSpread": true
+      }
     ],
-    "plugins": ["react", "@typescript-eslint"],
-    "parserOptions": {
-      "project": "./tsconfig.json",
-      "ecmaFeatures": {
-        "jsx": true
+    // フラグメントのショートハンドを強制する（key propsがあるときは除外される）
+    "react/jsx-fragments": ["warn", "syntax"],
+    // 閉じタグのスペースルールを以下の形式にする
+    // <hoge></hoge>
+    // <hoge />
+    // <hoge
+    //   piyo='fuga'
+    // />
+    "react/jsx-tag-spacing": [
+      "warn",
+      {
+        "closingSlash": "never",
+        "beforeSelfClosing": "always",
+        "afterOpening": "never",
+        "beforeClosing": "never"
       }
-    },
-    "settings": {
-      "react": {
-        "version": "detect"
+    ],
+    // 子要素を持たない終了タグを禁止
+    // <div></div> -> <div />
+    "react/self-closing-comp": [
+      "warn",
+      {
+        "component": true,
+        "html": true
       }
-    },
-    "rules": {
-      // key propsがない時に警告
-      // 以下の条件も警告する
-      // - フラグメントショートハンドにkey propsが必要な場合
-      // - スプレッド前にkey propsがある場合
-      "react/jsx-key": [
-        "warn",
-        {
-          "checkFragmentShorthand": true,
-          "checkKeyMustBeforeSpread": true
-        }
-      ],
-      // フラグメントのショートハンドを強制する（key propsがあるときは除外される）
-      "react/jsx-fragments": [
-        "warn",
-        "syntax"
-      ],
-      // 閉じタグのスペースルールを以下の形式にする
-      // <hoge></hoge>
-      // <hoge />
-      // <hoge
-      //   piyo='fuga'
-      // />
-      "react/jsx-tag-spacing": [
-        "warn",
-        {
-          "closingSlash": "never",
-          "beforeSelfClosing": "always",
-          "afterOpening": "never",
-          "beforeClosing": "never"
-        }
-      ],
-      // 子要素を持たない終了タグを禁止
-      // <div></div> -> <div />
-      "react/self-closing-comp": [
-        "warn",
-        {
-          "component": true,
-          "html": true
-        }
-      ],
-      // img要素の利用を許可（CSS対策）
-      // Next.js 13では不要かも
-      "@next/next/no-img-element": "off",
-      // ワークアラウンド
-      "testing-library/no-container": "off",
-      // ワークアラウンド
-      "testing-library/no-node-access": "off"
+    ],
+    // Reactのimportを強制するオプション
+    "react/react-in-jsx-scope": "off",
+    // img要素の利用を許可（CSS対策）
+    // Next.js 13では不要かも
+    "@next/next/no-img-element": "off",
+    // ワークアラウンド
+    "testing-library/no-container": "off",
+    // ワークアラウンド
+    "testing-library/no-node-access": "off"
   }
+}
