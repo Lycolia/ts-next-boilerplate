@@ -2,7 +2,10 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "NodeNext",
-    "lib": ["dom", "es2017"],
+    "lib": [
+      "dom",
+      "es2017"
+    ],
     "allowJs": false,
     "checkJs": false,
     "jsx": "preserve",
@@ -19,7 +22,16 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "incremental": true
   },
-  "include": ["**/*.ts", "**/*.tsx", "jest-setup.js"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "jest-setup.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
