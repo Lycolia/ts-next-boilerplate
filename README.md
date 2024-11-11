@@ -23,7 +23,11 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 Runs the Next.js production server for SSG
 
-### `npm run type-check`
+### `npm run fix`
+
+Runs formatter.
+
+### `npm run lint`
 
 Runs linter(detect only, does not fixer) of ESLint and TSC, that will prevent bugs!
 
