@@ -6,7 +6,7 @@
 
 In the project directory, you can run:
 
-### `npm start`
+### `pn start`
 
 Runs the app in the development mode\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser
@@ -14,32 +14,32 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 The page will reload if you make edits\
 You will also see any lint errors in the console.
 
-### `npm run build`
+### `pn build`
 
 Deployed the app for production assets to the `out/` folder\
 It correctly bundles React in production mode and optimizes the build for the best performance
 
-### `npm run serve`
+### `pn serve`
 
 Runs the Next.js production server for SSG
 
-### `npm run fix`
+### `pn fix`
 
 Runs formatter.
 
-### `npm run lint`
+### `pn lint`
 
 Runs linter(detect only, does not fixer) of ESLint and TSC, that will prevent bugs!
 
-### `npm test`
+### `pn t`
 
 Launches the test runner by watch mode
 
-### `npm run headless-test`
+### `pn headless-test`
 
 Launches the test and lint for headless mode
 
-### `npm run coverage`
+### `pn coverage`
 
 Getting test coverage
 

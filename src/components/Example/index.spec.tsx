@@ -1,4 +1,4 @@
-import { screen, render } from '@testing-library/react';
+import { screen, render, fireEvent } from '@testing-library/react';
 import { Example } from '.';
 
 describe('Example', () => {
@@ -6,16 +6,15 @@ describe('Example', () => {
     const testProps: React.ComponentProps<typeof Example> = {
       text: 'aaa',
       bgColor: 'red',
-      onClick: jest.fn
+      onClick: jest.fn()
     };
     render(<Example {...testProps} />);
     const el = screen.getByText(testProps.text);
-    // fireEvent does not work spy with toBeCalled in SWC
-    //fireEvent.click(el);
+
+    fireEvent.click(el);
 
     expect(el).toHaveTextContent(testProps.text);
     expect(el).toHaveClass('red');
-    // fireEvent does not work spy with toBeCalled in SWC
-    //expect(testProps.onClick).toBeCalled();
+    expect(testProps.onClick).toHaveBeenCalled();
   });
 });

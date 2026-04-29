@@ -8,8 +8,8 @@ type ExampleProps = {
 
 export const Example = (props: ExampleProps) => {
   return (
-    <span className={styles[props.bgColor]} onClick={props.onClick}>
+    <button type="button" className={styles[props.bgColor]} onClick={props.onClick}>
       {props.text}
-    </span>
+    </button>
   );
 };

@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 type LayoutProps = {
   title: string;
-  children: JSX.Element;
+  children: React.JSX.Element;
 };
 
 export const Layout = (props: LayoutProps) => {
