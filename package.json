@@ -16,7 +16,7 @@
     "test": "jest --watch",
     "fix": "biome format --write src/ && prettier --write *.md",
     "lint": "tsc --noEmit && biome lint src/",
-    "headless-test": "npm run type-check && jest",
+    "headless-test": "pnpm lint && jest",
     "coverage": "jest --coverage",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",

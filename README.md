@@ -6,7 +6,7 @@
 
 In the project directory, you can run:
 
-### `pn start`
+### `pnpm start`
 
 Runs the app in the development mode\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser
@@ -14,40 +14,40 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 The page will reload if you make edits\
 You will also see any lint errors in the console.
 
-### `pn build`
+### `pnpm build`
 
 Deployed the app for production assets to the `out/` folder\
 It correctly bundles React in production mode and optimizes the build for the best performance
 
-### `pn serve`
+### `pnpm serve`
 
 Runs the Next.js production server for SSG
 
-### `pn fix`
+### `pnpm fix`
 
 Runs formatter.
 
-### `pn lint`
+### `pnpm lint`
 
 Runs linter(detect only, does not fixer) of ESLint and TSC, that will prevent bugs!
 
-### `pn t`
+### `pnpm t`
 
 Launches the test runner by watch mode
 
-### `pn headless-test`
+### `pnpm headless-test`
 
 Launches the test and lint for headless mode
 
-### `pn coverage`
+### `pnpm coverage`
 
 Getting test coverage
 
-### `npm run storybook`
+### `pnpm storybook`
 
 Starts [Storybook](https://storybook.js.org/) in development mode
 
-### `npm run build-storybook`
+### `pnpm build-storybook`
 
 [Publish Storybook](https://storybook.js.org/docs/react/sharing/publish-storybook)
 
